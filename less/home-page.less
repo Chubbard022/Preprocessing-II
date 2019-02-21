@@ -6,16 +6,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(max-width: 500px){
+      border: 1px solid red;
+      flex-direction: column;
+      align-content: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media(max-width: 500px){
+        border: 1px solid red;
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media(max-width: 500px){
+        width:100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +41,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media(max-width: 500px){
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +61,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media(max-width: 500px){
+      width:100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,10 +76,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media(max-width: 500px){
+      flex-direction: column;
+      border: 1px solid red;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
       border: 2px solid white;
+
+      @media(max-width: 500px){
+        width:100%;
+      }
+      
       .btn{
         .custom-button();
       }
