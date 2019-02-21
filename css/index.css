@@ -241,4 +241,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  border: 2px solid white;
+}
+.home .content-pick .destination .btn {
+  border: 1px solid #17A2B8;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  width: 100%;
 }
