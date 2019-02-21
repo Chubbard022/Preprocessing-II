@@ -1,6 +1,9 @@
 .container{
     border-bottom: 2px dashed @navigation-border;
 
+        @media @mobile{
+            padding: 0 1rem;
+        }
     header{
         border-bottom: 2px dashed @navigation-border;
         display: flex;
@@ -9,12 +12,12 @@
         align-items: center;
         padding-bottom: 1rem;
 
-        @media(max-width: 500px){
+        @media @mobile{
             justify-content: center;
         }
         .nav-section{
 
-            @media(max-width: 500px){
+            @media @mobile{
                 margin-bottom: 1rem;
             }
 

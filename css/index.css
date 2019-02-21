@@ -171,6 +171,11 @@ img {
 .container {
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 .container header {
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
@@ -216,6 +221,7 @@ img {
   .home .content-section {
     flex-direction: column;
     align-content: center;
+    padding: 0 1rem;
   }
 }
 .home .content-section .text-content {
@@ -234,7 +240,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0 1rem 0 5rem;
+    padding: 0 1rem 0 3rem;
   }
 }
 .home .content-section .img-content img {
@@ -260,7 +266,7 @@ img {
 @media (max-width: 500px) {
   .home .inverse-content .img-content {
     width: 100%;
-    padding: 0 1rem 0 5rem;
+    padding: 0 1rem 0 3rem;
   }
 }
 .home .content-destination {
