@@ -1,1 +1,19 @@
 // Mixins in here
+
+//mixin for general flex box alignment
+.custom-flex(@justify,@align){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+//general button mixin
+.custom-button(){
+    border: 1px solid @eastern-blue;
+    color: @main-bg;
+    background-color: @eastern-blue;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    padding:.5rem;
+    width:100%;
+}

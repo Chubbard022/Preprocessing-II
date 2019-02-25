@@ -1,1 +1,32 @@
-// Navigation Styles here
+.container{
+    border-bottom: 2px dashed @navigation-border;
+
+        @media @mobile{
+            padding: 0 1rem;
+        }
+    header{
+        border-bottom: 2px dashed @navigation-border;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        @media @mobile{
+            justify-content: center;
+        }
+        .nav-section{
+
+            @media @mobile{
+                margin-bottom: 1rem;
+            }
+
+            a{
+                font-size: 1.6rem;
+                color: black;
+                text-decoration: none;
+                padding: 2rem;
+            }
+        }//items in nav bar
+    }//header
+}//container for top section
